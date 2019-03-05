@@ -6,9 +6,16 @@
 
     <StackLayout>
         <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
+        <Label Text="Ecrire un texte à sauvegarder dans un fichier TXT." 
            HorizontalOptions="Center"
            VerticalOptions="CenterAndExpand" />
+        <Editor x:Name="CommentaryEditor"
+                Placeholder="Placer un texte ici, merci"
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand"/>
+        <Button Text="Save"
+                Clicked="SaveButton_Clicked"
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand"/>
     </StackLayout>
-
 </ContentPage>
